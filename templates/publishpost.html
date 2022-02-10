@@ -1,0 +1,18 @@
+{% extends "layout.html"%} {% block title%} Publish Post {% endblock %} {% block
+main %}
+<form action="/publishpost" method="post">
+  <div class="mb-3">
+    <input
+      class="w-50 p-3"
+      autocomplete="off"
+      autofocus
+      class="form-control mx-auto w-auto"
+      id="username"
+      name="communityPost"
+      placeholder="Write something"
+      type="text"
+    />
+  </div>
+  <button class="btn btn-dark" type="submit">Publish Post</button>
+</form>
+{% endblock %}

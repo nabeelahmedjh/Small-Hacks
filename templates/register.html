@@ -1,0 +1,50 @@
+{% extends "layout.html"%} {% block title%} login {% endblock %} {% block main
+%}
+<form action="/register" method="post">
+  <div class="mb-3">
+    <input
+      autocomplete="off"
+      autofocus
+      class="form-control mx-auto w-auto"
+      id="username"
+      name="username"
+      placeholder="Username"
+      type="text"
+    />
+  </div>
+  <div class="mb-3">
+    <input
+      class="form-control mx-auto w-auto"
+      id="password"
+      name="password"
+      placeholder="Password"
+      type="password"
+    />
+  </div>
+  <div class="mb-3">
+    <input
+      class="form-control mx-auto w-auto"
+      id="password"
+      name="confirmation"
+      placeholder="Cofirm Password"
+      type="password"
+    />
+  </div>
+  <button class="btn btn-dark" type="submit">Register</button>
+</form>
+<ul class="list-group mb-3 w-50 p-3 mx-auto">
+  <li class="list-group-item list-group-item-danger">PASSWORD REQUIRMENTS</li>
+  <li class="list-group-item list-group-item-info">
+    At least 8 characters—the more characters, the better.
+  </li>
+  <li class="list-group-item list-group-item-info">
+    A mixture of both uppercase and lowercase letters.
+  </li>
+  <li class="list-group-item list-group-item-info">
+    A mixture of letters and numbers.
+  </li>
+  <li class="list-group-item list-group-item-info">
+    Inclusion of at least one special character, e.g., ! @ # ? ].
+  </li>
+</ul>
+{% endblock %}

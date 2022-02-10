@@ -1,0 +1,9 @@
+{% extends "layout.html"%} {% block title%} Your Posts {% endblock %} {% block
+main %} {% for post in yourPosts%}
+<div class="card bg-light mb-3 mt-2 col-md-12 mx-auto" style="width: 75%">
+  <h5 class="card-header">{{post["datetime"]}}</h5>
+  <div class="card-body">
+    <p class="card-text">{{post["post_data"]}}</p>
+  </div>
+</div>
+{%endfor%} {% endblock %}

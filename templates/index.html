@@ -1,0 +1,10 @@
+{% extends "layout.html"%} {% block title%} Community Posts {% endblock %} {%
+block main %} {% for post in communityPosts%}
+<div class="card bg-light mb-3 mt-2 col-md-12 mx-auto" style="width: 75%">
+  <h5 class="card-header">From {{post["username"]}}</h5>
+  <div class="card-body">
+    <h6 class="card-subtitle mb-2 text-muted">{{post["datetime"]}}</h6>
+    <p class="card-text">{{post["post_data"]}}</p>
+  </div>
+</div>
+{%endfor%} {% endblock %}
