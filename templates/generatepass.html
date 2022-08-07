@@ -1,0 +1,25 @@
+{% extends "layout.html"%} {% block title%} Generate Password {% endblock %} {%
+block main %}
+<ul class="list-group mb-3 w-50 p-3 mx-auto">
+  <li class="list-group-item list-group-item-danger">
+    STANDARD PASSWORD REQUIRMENTS
+  </li>
+  <li class="list-group-item list-group-item-info">
+    At least 8 characters—the more characters, the better.
+  </li>
+  <li class="list-group-item list-group-item-info">
+    A mixture of both uppercase and lowercase letters.
+  </li>
+  <li class="list-group-item list-group-item-info">
+    A mixture of letters and numbers.
+  </li>
+  <li class="list-group-item list-group-item-info">
+    Inclusion of at least one special character, e.g., ! @ # ? ].
+  </li>
+</ul>
+<form action="/generatepass" method="post">
+  <div class="mb-3"></div>
+  <button class="btn btn-dark" type="submit">Generate Password</button>
+</form>
+
+{% endblock %}

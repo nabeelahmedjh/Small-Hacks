@@ -1,0 +1,36 @@
+{% extends "layout.html"%} {% block title%} login {% endblock %} {% block main
+%}
+<div class="alert alert-info w-75 p-3 mx-auto" role="alert">
+  <p class="blockquote">
+    Small Hacks is a platform that will help you assist in your small task such
+    as generating a strong password that will protect your accounts on internet
+    and it has a wonderful tech community where people can share their point of
+    views about the technologies related to computers. It’s still in beta mode
+    and there are only two hacks available on it for now. For sure it will be
+    updated in future.
+  </p>
+</div>
+<form action="/login" method="post">
+  <div class="mb-3">
+    <input
+      autocomplete="off"
+      autofocus
+      class="form-control mx-auto w-auto"
+      id="username"
+      name="username"
+      placeholder="Username"
+      type="text"
+    />
+  </div>
+  <div class="mb-3">
+    <input
+      class="form-control mx-auto w-auto"
+      id="password"
+      name="password"
+      placeholder="Password"
+      type="password"
+    />
+  </div>
+  <button class="btn btn-dark" type="submit">Log In</button>
+</form>
+{% endblock %}
